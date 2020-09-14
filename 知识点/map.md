@@ -63,3 +63,26 @@ func hasEdge(from ,to string)bool{
 }
 ```
 
+
+
+#### map & 切片
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+	it := make([]map[int]int,5)
+	for a:= range it{
+		it[a] = make(map[int]int,1)
+		it[a][1] = 2
+	}
+
+	fmt.Printf("%v",it)
+	
+
+}
+
+```
+
